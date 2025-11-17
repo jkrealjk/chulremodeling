@@ -8,8 +8,19 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-suit);
   --font-mono: var(--font-geist-mono);
+
+  --color-primary: oklch(0.349 0.197 306.15); /* #3B0270 딥퍼플 */
+  --color-primary-foreground: oklch(0.969 0.015 20.3); /* 밝은 텍스트 */
+
+  --color-accent-1: oklch(0.524 0.273 300.25); /* #6F00FF 바이올렛 */
+  --color-accent-2: oklch(0.846 0.086 329.55); /* #E9B3FB 라벤더 */
+  --color-bg-soft: oklch(0.969 0.015 20.3); /* #FFF1F1 소프트 배경 */
+
+  --color-muted: oklch(0.94 0.01 260);
+  --color-muted-foreground: oklch(0.35 0.02 260);
+  --color-border: oklch(0.88 0.01 260);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +33,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-suit), sans-serif;
 }
