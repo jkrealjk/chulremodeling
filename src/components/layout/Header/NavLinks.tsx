@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const navLinks = [
-  { href: "#hero", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
+  { href: "#hero", label: "홈" },
+  { href: "#about", label: "제품소개" },
+  { href: "#projects", label: "금속정보" },
   { href: "#contact", label: "Contact" },
 ] as const;
 
