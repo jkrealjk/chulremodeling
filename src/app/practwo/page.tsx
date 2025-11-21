@@ -1,7 +1,5 @@
-import { Header, Hero, Footer } from "@/components";
-import About from "@/components/sections/About";
-import Projects from "@/components/sections/Projects";
-import Contact from "@/components/sections/Contact";
+import { Header, Footer } from "@/components";
+import { Hero, About, Projects, Contact } from "@/components/sections";
 
 export default function Practwo() {
   return (
