@@ -1,11 +1,11 @@
 import Image from "next/image";
-import logo from "@/assets/logo.svg"; // 문자열(경로)로 들어옴
+import logo from "@/assets/logo.svg";
 
 type LogoProps = {
   className?: string;
 };
 
-export default function Logo({ className }: LogoProps) {
+export default function ImageLogo({ className }: LogoProps) {
   return (
     <Image
       src={logo}

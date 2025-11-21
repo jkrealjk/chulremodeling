@@ -4,7 +4,7 @@ export const navLinks = [
   { href: "#hero", label: "홈" },
   { href: "#about", label: "제품소개" },
   { href: "#projects", label: "금속정보" },
-  { href: "#contact", label: "Contact" },
+  { href: "#contact", label: "CONTACT" },
 ] as const;
 
 export default function NavLinks() {

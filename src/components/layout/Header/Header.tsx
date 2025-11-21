@@ -36,17 +36,17 @@
 // }
 
 import Link from "next/link";
-import { Logo } from "@/components/ui";
+import { TextLogo } from "@/components/ui";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 
 export default function Header() {
   return (
-    <header className="">
-      <div className="flex items-center justify-between">
+    <header className="h-20">
+      <div className="flex items-center justify-between h-full">
         {/* 로고 */}
         <Link href="/">
-          <Logo className="h-12" />
+          <TextLogo className="text-2xl" />
         </Link>
 
         {/* 네비게이션 */}

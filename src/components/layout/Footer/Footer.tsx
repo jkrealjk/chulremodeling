@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Logo } from "@/components/ui";
+import { ImageLogo } from "@/components/ui";
 import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Left: brand */}
         <div className="space-y-2">
           <Link href="/" className="inline-flex items-center gap-2">
-            <Logo className="h-6" />
+            <ImageLogo className="h-6" />
           </Link>
           <p className="text-xs text-muted-foreground max-w-xs">
             간단한 소개 설명 텍스트를 여기에 넣으면 됩니다.
