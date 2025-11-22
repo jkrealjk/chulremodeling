@@ -3,8 +3,13 @@
 import { useState } from "react";
 import { Burger, Close } from "@/components/ui";
 import NavLinks from "./NavLinks";
+import { cn } from "@/lib/utils";
 
-export default function MobileNav() {
+type MobileNavProps = {
+  className?: string;
+};
+
+export default function MobileNav({ className }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -12,7 +17,7 @@ export default function MobileNav() {
   };
 
   return (
-    <nav className="md:hidden">
+    <nav className={cn("md:hidden", className)}>
       <button onClick={handleClick} type="button" className="md:hidden">
         {isOpen ? (
           <Close className="w-6 h-6" />
@@ -20,7 +25,7 @@ export default function MobileNav() {
           <Burger className="w-6 h-6" />
         )}
       </button>
-      {isOpen && <NavLinks />}
+      {isOpen && <NavLinks className={className} />}
     </nav>
   );
 }

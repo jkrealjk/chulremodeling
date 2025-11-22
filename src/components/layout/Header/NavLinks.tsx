@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export const navLinks = [
   { href: "#hero", label: "홈" },
@@ -7,9 +8,13 @@ export const navLinks = [
   { href: "#contact", label: "CONTACT" },
 ] as const;
 
-export default function NavLinks() {
+type NavLinksProps = {
+  className?: string;
+};
+
+export default function NavLinks({ className }: NavLinksProps) {
   return (
-    <ul className="flex items-center gap-4">
+    <ul className={cn("flex items-center gap-4 text-white", className)}>
       {navLinks.map((link) => (
         <li key={link.href}>
           <Link href={link.href}>{link.label}</Link>

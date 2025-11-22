@@ -42,17 +42,16 @@ import MobileNav from "./MobileNav";
 
 export default function Header() {
   return (
-    <header className="h-20">
-      <div className="flex items-center justify-between h-full">
-        {/* 로고 */}
-        <Link href="/">
-          <TextLogo className="text-2xl" />
-        </Link>
-
-        {/* 네비게이션 */}
-        <div className="flex items-center gap-4">
-          <DesktopNav />
-          <MobileNav />
+    <header className="h-20 bg-black">
+      <div className="h-full max-w-7xl mx-auto">
+        <div className="flex items-center justify-between h-full border rounded-full px-4 bg-white">
+          <Link href="/">
+            <TextLogo className="text-black text-xl" />
+          </Link>
+          <div className="flex items-center gap-4">
+            <DesktopNav className="text-black text-xl" />
+            <MobileNav className="text-black text-xl" />
+          </div>
         </div>
       </div>
     </header>

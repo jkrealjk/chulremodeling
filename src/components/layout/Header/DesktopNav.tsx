@@ -1,9 +1,13 @@
 import NavLinks from "./NavLinks";
 
-export default function DesktopNav() {
+type DesktopNavProps = {
+  className?: string;
+};
+
+export default function DesktopNav({ className }: DesktopNavProps) {
   return (
     <nav className="hidden md:block">
-      <NavLinks />
+      <NavLinks className={className} />
     </nav>
   );
 }
